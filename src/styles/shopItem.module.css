@@ -1,0 +1,129 @@
+.mainContainer {
+  height: 100%;
+  width: 100%;
+  transition: all 0.3s;
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  border-radius: 10px;
+}
+/* *Favorite button style. Might be removed in future*
+.favoriteIcon {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 1;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+.favoriteIcon:hover {
+    color: rgb(0, 0, 0);
+}
+.redHeart {
+    -webkit-animation: wink 2s;
+    animation: wink 0.4s;
+    color: red;
+}
+.redHeart:hover {
+    color: red;
+}
+@-webkit-keyframes wink {
+    0% {
+        font-size: 24px;
+    }
+    25% {
+        font-size: 15px;
+    }
+    50% {
+        font-size: 40px;
+    }
+    100% {
+        font-size: 24px;
+    }
+}
+@keyframes wink{
+    0% {
+        font-size: 24px;
+    }
+    25% {
+        font-size: 15px;
+    }
+    50% {
+        font-size: 40px;
+    }
+    100% {
+        font-size: 24px;
+    }
+}
+*/
+.imageContainer {
+  height: calc(100% - 80px);
+  overflow: hidden;
+  position: relative;
+}
+.imageItem {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.textContainer {
+  height: 80px;
+  background-color: #fff;
+  position: relative;
+  padding: 10px;
+  overflow: visible;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+.textLeft {
+  font-weight: bolder;
+}
+.textRight {
+  font-weight: bolder;
+  text-align: right;
+}
+.textBottom {
+  font-weight: 400;
+}
+.showImg {
+  opacity: 0;
+  transition: all 0.3s;
+}
+.hideImg {
+  transition: all 0.3s;
+}
+.cartBtn {
+  /* height: 30px !important; */
+  /* top: auto; */
+  bottom: 0;
+  margin: 0 2% 2% 2%;
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 0;
+  height: fit-content;
+}
+.cartBtn svg {
+  /* margin-bottom: -3px; */
+  height: 18px;
+}
+.mainContainer:hover .hideImg {
+  opacity: 0;
+  transition: all 0.3s;
+}
+.mainContainer:hover .showImg {
+  opacity: 1;
+  transition: all 0.3s;
+}
+.mainContainer:hover .cartBtn {
+  opacity: 1;
+  transition: all 0.3s;
+}
+.discounted {
+  font-size: 12px;
+  color: gray;
+  display: grid;
+  margin-bottom: -15px;
+}

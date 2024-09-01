@@ -1,0 +1,74 @@
+.sideCartContainer {
+  width: 485px;
+  padding: 20px 10px 10px 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .sideCartContainer {
+    padding: 20px 0;
+
+    width: 100vw;
+  }
+}
+
+.cartItemCont {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.navigationMenuWrapper {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menuItem {
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1.42857;
+  font-weight: 800;
+  outline: 0 none;
+  padding: 10px 4px;
+  margin: 0 14px;
+  text-transform: uppercase;
+  border-radius: 0;
+  position: relative;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.menuItem a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* .menuItem {
+  position: relative;
+  color: black;
+  transition: all 0.35s ease;
+  cursor: pointer;
+} */
+.menuItem::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 1px;
+  left: 0;
+  background-color: #ed5b67;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.menuItem:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}

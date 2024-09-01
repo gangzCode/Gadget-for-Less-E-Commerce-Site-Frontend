@@ -1,0 +1,280 @@
+.sideUserContainer {
+  width: 485px;
+  padding: 60px 30px;
+  text-align: center;
+}
+.buttonBox {
+  width: 220px;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #ff6b6b;
+  margin: auto auto 40px;
+}
+.btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 41px;
+  background: #000;
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+.leftBtn {
+  margin-left: 0;
+  transition: all 0.5s;
+}
+.rightBtn {
+  margin-left: 110px;
+  transition: all 0.5s;
+}
+.toggleBtn {
+  padding: 10px 30px;
+  color: #fff;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  float: left;
+  width: 110px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.inputField {
+  width: 80%;
+  margin-bottom: 20px;
+}
+.checkbox {
+  text-align: center;
+}
+.checkboxLabel {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+.labelCont {
+  display: flex;
+  align-content: flex-start;
+  margin-left: 10%;
+}
+.loginBtn {
+  width: 80%;
+  margin-top: 32px;
+  margin-right: 10px;
+}
+.swipeContainer {
+  width: 200%;
+  transition: all 0.5s;
+}
+.leftCont {
+  margin-left: 0;
+}
+.rightCont {
+  margin-left: -100%;
+}
+.helperText {
+  color: #d32f2f;
+  margin: 0 12% 0;
+}
+.closeContainer {
+  cursor: pointer;
+  text-align: right;
+  float: right;
+  align-content: end;
+  margin: 15px 15px 0 auto;
+  height: 17px;
+  width: 17px;
+}
+.closeIcon {
+  cursor: pointer;
+  text-align: right;
+  float: right;
+  align-content: end;
+}
+
+/* Styles after login */
+.topic {
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  cursor: default;
+}
+
+/* Cart container styles */
+.sideCartContainer {
+  width: 485px;
+  padding: 20px 10px 10px 30px;
+  text-align: center;
+}
+
+.cartItemCont {
+  height: calc(100vh - 240px);
+  overflow-y: auto;
+  padding-right: 10px;
+}
+.cartItem {
+  border: 1px solid #455162;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.cartImage {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.cartIcon {
+  margin-top: calc(50% + 20px);
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.cartIcon:hover {
+  color: #ff6b6b;
+  transition: all 0.3s;
+}
+.cartItemName {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.cartItemQty {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.cartItemAmount {
+  /* position: absolute; */
+  bottom: 5px;
+  right: 20px;
+  font-size: 20px;
+  line-height: 1.2em;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-align: end;
+}
+.cartItemAmountSingle {
+  display: inline;
+  font-size: 16px;
+  font-weight: 400;
+  color: #455162;
+  font-family: "Poppins", sans-serif;
+  margin-right: 5px;
+}
+
+.bottomCont {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  overflow: hidden;
+  margin-left: -30px;
+  padding-left: 10px;
+  height: 170px;
+  background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .sideUserContainer {
+    width: 100vw;
+    padding: 20px 10px 10px 10px;
+  }
+  .sideCartContainer {
+    padding: 20px 10px 10px 10px;
+    width: 100vw;
+  }
+  .cartItemAmountSingle {
+    display: none;
+  }
+  .cartItemAmount {
+    bottom: 0px;
+    font-size: 18px;
+  }
+  .cartItemName {
+    margin-bottom: 5px;
+  }
+
+  .cartItemCont {
+    padding-right: 0px;
+  }
+  .bottomCont {
+    margin-left: 0px;
+    padding: 0 10px;
+  }
+}
+.shippingTip {
+  height: 35%;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 400;
+  padding-top: 8px;
+  margin-right: 20px;
+  font-family: "Poppins", sans-serif;
+  border-top: 1px solid #f4f4f4;
+  margin-top: 8px;
+}
+.subTot {
+  height: 30%;
+  text-align: left;
+  padding-left: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.subAmount {
+  height: 30%;
+  padding-right: 40px;
+  text-align: right;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  font-family: "Poppins", sans-serif;
+}
+.checkoutBtn {
+  width: 70%;
+  margin-left: -20px;
+}
+.checkoutBtn svg {
+  margin-bottom: -5px;
+}
+.cartItemCircle {
+  background-color: white;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 30px;
+  height: 23px;
+  text-align: center;
+  padding-top: 7px;
+  border: 1px solid #ffffff;
+  outline: 2px solid #ff6b6b;
+}
+.cartItemBox {
+  background-color: white;
+  margin-right: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 10%;
+  padding: 2px 2px 4px 2px;
+  margin-top: 5px;
+}
+.mousePointer {
+  cursor: pointer;
+}
+.mousePointer:hover {
+  color: #ff6b6b;
+  transition: all 0.3s;
+}

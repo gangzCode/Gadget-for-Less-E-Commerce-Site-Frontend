@@ -1,0 +1,180 @@
+.container {
+  padding: 80px 6rem 0 6rem;
+  height: 38px;
+}
+
+.title {
+  font-size: 2vw;
+  font-weight: 900;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+.title::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 20px;
+  background: #d1f4eb;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  background: #fff;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+
+.tempCard {
+  width: 17vw;
+  height: 20vw;
+}
+
+.sliderMasterContainer {
+  width: 100%;
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+.sliderContainer {
+  width: 118.3vw;
+  margin-left: -9.5vw;
+  overflow-x: hidden;
+}
+
+.slider {
+  margin-top: 60px;
+  overflow-x: hidden;
+}
+.leftContainer {
+  margin: 60px 0 0 0;
+  height: 20vw;
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.304));
+  width: 6.9vw;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+}
+.rightContainer {
+  margin: 60px 0 0 0;
+  height: 20vw;
+  background-image: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0.304));
+  width: calc(8vw - 10px);
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+.sliderBtnLeft {
+  position: absolute;
+  display: flex;
+  background-color: #fff;
+  color: #000;
+  outline: 2px solid #0000003d;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  margin-left: 14vw;
+  margin-top: calc(8.1vw - 27px);
+  z-index: 1;
+  border-radius: 27px;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: all 0.3s;
+}
+.sliderBtnLeft:hover {
+  background-color: #dadada;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.sliderBtnRight {
+  position: absolute;
+  display: flex;
+  background-color: #fff;
+  color: #000;
+  outline: 2px solid #0000003d;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  margin-left: calc(-15.2vw - 27px);
+  margin-top: calc(8.1vw - 27px);
+  z-index: 1;
+  border-radius: 27px;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: all 0.3s;
+}
+.sliderBtnRight:hover {
+  background-color: #dadada;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* @media screen and (max-width: 992px) {
+  .tempCard {
+    width: 28vw;
+    height: 35vw;
+    margin: 0 10vw;
+  }
+} */
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 40px 1rem 0 1rem;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .title::before {
+    height: 10px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .tempCard {
+    width: 80vw;
+    margin: 0 10vw;
+    height: 100vw;
+  }
+  .sliderMasterContainer {
+    padding-top: 10px;
+    margin-top: 20px;
+  }
+  .sliderContainer {
+    width: 100vw;
+    margin-left: 0;
+    overflow-x: hidden;
+  }
+
+  .leftContainer {
+    height: 100vw;
+    width: 25vw;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+  }
+  .rightContainer {
+    height: 100vw;
+    width: 25vw;
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+  }
+
+  .sliderBtnLeft {
+    margin-left: 7vw;
+    margin-top: calc(50vw - 27px);
+  }
+  .sliderBtnLeft:hover {
+    background-color: #dadada;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .sliderBtnRight {
+    margin-left: calc(-10.2vw - 27px);
+    margin-top: calc(50vw - 27px);
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "electronics-ecomm-front",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@auth0/auth0-react": "^2.2.4",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.20",
+    "@mui/lab": "^5.0.0-alpha.170",
+    "@mui/material": "^5.15.20",
+    "@mui/x-date-pickers": "^7.9.0",
+    "@trendyol-js/react-carousel": "^3.0.2",
+    "date-fns": "^3.6.0",
+    "next": "14.2.3",
+    "notistack": "^3.0.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.52.0",
+    "react-image-gallery": "^1.3.0",
+    "react-material-ui-carousel": "^3.4.2",
+    "react-multi-carousel": "^2.8.5",
+    "react-multilevel-dropdown": "^4.0.0",
+    "react-select-country-list": "^2.2.3",
+    "react-slick": "^0.30.2",
+    "sass": "^1.77.6",
+    "slick-carousel": "^1.8.1",
+    "yet-another-react-lightbox": "^3.21.1"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  }
+}

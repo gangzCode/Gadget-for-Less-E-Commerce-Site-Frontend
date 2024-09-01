@@ -1,0 +1,90 @@
+.parallax_section {
+  background: #000;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.parallax_section .parallax_image {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  height: 800px;
+  left: 0;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.parallax_cover_image_text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.parallax_cover_image_text h4 {
+  color: #fff;
+  font-size: 16px;
+  display: block;
+  text-transform: uppercase;
+  margin: 0 0 8px 0;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.parallax_cover_image_text h2 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 900;
+  display: block;
+  margin: 0 0 28px 0;
+}
+
+.parallax_cover_image_text h2 span {
+  color: #ff6b6b;
+}
+
+.parallax_cover_image_text .btn_style_one {
+  background-color: #fff;
+  color: #000;
+  margin-top: 20px;
+}
+
+.parallax_cover_image_text .btn_style_one::before {
+  background-color: #ccc;
+}
+
+/* LOADING SCREEN STYLES*/
+.glow {
+  width: 20%;
+  object-fit: cover;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    -webkit-filter: drop-shadow(0px 0px 0px #ffffff);
+  }
+  to {
+    -webkit-filter: drop-shadow(0px 0px 10px #ff0081);
+  }
+}
+@keyframes glow {
+  from {
+    filter: drop-shadow(0px 0px 0px #ffffff);
+  }
+  to {
+    filter: drop-shadow(0px 0px 10px #ff0081);
+  }
+}

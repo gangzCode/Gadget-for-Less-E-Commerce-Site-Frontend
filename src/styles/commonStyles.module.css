@@ -1,0 +1,107 @@
+.breadCrumbImage {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.breadCrumbContainer {
+  background-color: #f8f8f8;
+  padding: 14px 6rem;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .breadCrumbImage {
+    height: 200px;
+  }
+  .breadCrumbContainer {
+    padding: 14px 1rem;
+  }
+}
+.breadCrumbText {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: all ease 0.3s;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+}
+.breadCrumbTextLast {
+  color: #999;
+  text-decoration: none;
+  cursor: default;
+  font-family: "Poppins", sans-serif;
+  transition: all ease 0.3s;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+}
+.breadCrumbText:hover {
+  color: #ff6b6b;
+  transition: all ease 0.3s;
+}
+.breadCrumbIcon {
+  height: 18px;
+  color: #999;
+  padding: 0 5px;
+  line-height: 0;
+  margin-top: -3px;
+}
+
+.numberInputContainer {
+  height: 36px;
+  display: inline-flex;
+  justify-content: center;
+  border: 1px solid #eee;
+  border-radius: 10px;
+}
+
+.numberInput {
+  text-align: center;
+  font-weight: bold;
+  background-color: #eee;
+  border: none;
+  color: #000;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1.6;
+  cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+  .numberInputContainer {
+    height: 26px;
+  }
+  .numberInput {
+    padding: 0px;
+    font-size: 16px;
+    line-height: 1.6;
+    cursor: default;
+  }
+}
+
+.numberInputBtn {
+  text-align: center;
+  font-weight: bold;
+  border: none;
+  color: #666666;
+  background: white;
+  padding: 5px;
+  line-height: 2.1;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.1s;
+}
+.numberInputBtn:hover {
+  color: #000;
+  background: #c9c9c9;
+}
